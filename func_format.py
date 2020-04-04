@@ -127,16 +127,13 @@ make_schedule("a1", "a2", "a3")
 make_schedule("c1", "c2", "c3")
 
 
-# In[ ]:
+# In[23]:
 
 
+def state_one(para1, para2):
+    return "state_name "+ para1 + " country_name "+ para2
 
-
-
-# In[ ]:
-
-
-
+print(state_one("Rajasthan", "India"))
 
 
 # In[ ]:
