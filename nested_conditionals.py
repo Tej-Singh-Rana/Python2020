@@ -77,3 +77,40 @@ else:
     print("Wrong selection")
 print("Good luck!!")    
 
+
+# In[ ]:
+
+
+# using while loop
+guess = input("Enter the game Y/N : ")
+bird = ["parrot", "pigeon", "sparrow", "bat"]
+while True:
+    if guess.lower() == 'y':
+        print("Guess the correct bird name parrot, pigeon, sparrow, bat : ")
+        bird_input = input("Enter the bird name : ")
+        if bird_input in bird:
+            if bird_input == "bat":
+                print("guess is correct.")
+                break
+            elif bird_input == "sparrow":
+                print("Yes, you are near.")
+            elif bird_input == "parrot":
+                print("almost near")
+            elif bird_input == "pigeon":
+                print("you are near")
+        else:
+            print("Invalid selection.")
+    elif guess.lower() == 'n':
+        print("Not intersted today!!")
+        break
+    else:
+        print("Wrong selection")
+        break
+print("Good luck!!")    
+
+
+# In[ ]:
+
+
+
+
